@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cryptocurrency Exchange Rate</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="header">
+      <h1>Crypto Exchange</h1>
+    </header>
+    <div class="container">
+      <div id="bitcoin" class="currency">
+        <div class="currency-name">Bitcoin</div>
+        <div class="currency-exchange">Loading...</div>
+      </div>
+      <div id="ethereum" class="currency">
+        <div class="currency-name">Etherium</div>
+        <div class="currency-exchange">Loading...</div>
+      </div>
+      <div id="litecoin" class="currency">
+        <div class="currency-name">Litecoin</div>
+        <div class="currency-exchange">Loading...</div>
+      </div>
+      <div id="bitcoin-cash" class="currency">
+        <div class="currency-name">Bitcoin Cash</div>
+        <div class="currency-exchange">Loading...</div>
+      </div>
+      <div id="dogecoin" class="currency">
+        <div class="currency-name">Dogecoin</div>
+        <div class="currency-exchange">Loading...</div>
+      </div>
+    </div>
+    <div class="container convert">
+      <div>
+        <input id="convert-amount" type="number" min="0" value="100" />
+      </div>
+      <div>
+        <span>dollars is</span>
+      </div>
+      <div>
+        <span class="convert-result" id="convert-result">Loading...</span>
+      </div>
+      <div>
+        <select id="currency-select"></select>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
